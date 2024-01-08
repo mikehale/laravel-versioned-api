@@ -7,6 +7,12 @@ use App\Http\Controllers\Api\V1\ApiController;
 
 class PostController extends ApiController
 {
+    /**
+     * @OA\Get(
+     *     path="/api/posts",
+     *     @OA\Response(response="200", description="list posts")
+     * )
+     */
     public function index()
     {
     }

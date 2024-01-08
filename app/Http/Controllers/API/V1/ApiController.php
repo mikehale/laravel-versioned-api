@@ -4,8 +4,10 @@ namespace App\Http\Controllers\Api\V1;
 
 use Illuminate\Routing\Controller as BaseController;
 
+use OpenApi\Annotations as OA;
+
 /**
- * OA\OpenApi(
+ * @OA\OpenApi(
  *   @OA\Info(
  *        title="laravel-versioned-api",
  *        description="laravel-versioned-api",
