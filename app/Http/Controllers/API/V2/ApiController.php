@@ -6,6 +6,7 @@ use Illuminate\Routing\Controller as BaseController;
 
 /**
  * @OA\Info(
+ *      title="laravel-versioned-api",
  *      version="2.0.0",
  * )
  */
