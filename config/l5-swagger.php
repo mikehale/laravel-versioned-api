@@ -3,7 +3,7 @@
 return [
     'default' => 'V1',
     'documentations' => [
-                'V1' => [
+        'V1' => [
             'api' => [
                 'title' => 'L5 Swagger UI V1',
             ],
@@ -13,8 +13,8 @@ return [
                  * Route for accessing api documentation interface
                 */
                 'api' => 'api/documentation/v1',
-                'docs' => '/api/v1',
-                'oauth2_callback' => '/api/v1/callback',
+                'docs' => 'api/docs/v1',
+                'oauth2_callback' => 'api/oauth2-callback/v1',
             ],
             'paths' => [
                 /*
@@ -56,8 +56,8 @@ return [
                  * Route for accessing api documentation interface
                 */
                 'api' => 'api/documentation/v2',
-                'docs' => '/api/v2',
-                'oauth2_callback' => '/api/v2/callback',
+                'docs' => 'api/docs/v2',
+                'oauth2_callback' => 'api/oauth2-callback/v2',
             ],
             'paths' => [
                 /*

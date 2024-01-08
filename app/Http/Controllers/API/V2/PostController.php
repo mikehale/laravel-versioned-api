@@ -15,6 +15,7 @@ class PostController extends ApiController
      */
     public function index()
     {
+        return '{"message": "some v2 posts"}';
     }
 
     public function create()
