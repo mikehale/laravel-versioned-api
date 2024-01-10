@@ -10,6 +10,7 @@ class PostController extends ApiController
     /**
      * @OA\Get(
      *     path="/api/posts",
+     *     tags={"Post"},
      *     @OA\Response(response="200", description="list posts")
      * )
      */
