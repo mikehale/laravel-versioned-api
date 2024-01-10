@@ -12,7 +12,7 @@ class ApiVersion
 }
 
 if (ApiVersion::is(1)) {
-    Route::apiResource('posts', V1\PostController::class)->only(['index']);
+    Route::get('posts', [V1\PostController::class, 'index'])->name('posts.v1');
 } else {
-    Route::apiResource('posts', V2\PostController::class)->only(['index']);
+    Route::get('posts', [V2\PostController::class, 'index'])->name('posts.v2');
 }
