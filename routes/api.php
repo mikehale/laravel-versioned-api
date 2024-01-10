@@ -6,7 +6,10 @@ use App\Http\Controllers\Api\V2;
 class ApiVersion
 {
     public static function is($version) {
-        return Illuminate\Support\Facades\Request::header('apiversion') == $version;
+        return str_contains(
+            "application/vnd.example+json; version=$version",
+            Illuminate\Support\Facades\Request::header('Accept')
+        );
     }
 
 }
